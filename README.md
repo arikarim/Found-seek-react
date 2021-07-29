@@ -5,7 +5,7 @@
   <h3 align="center">React-Rails --> [React]</h3>
 
   <p align="center">
-This is a React front-end assinment of Found & Seek.
+This is a React front-end assignment of Found & Seek. 
   </p>
 </p
 
