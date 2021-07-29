@@ -7,9 +7,10 @@ const Nav = ({ setUser }) => {
 
   const toke = JSON.parse(localStorage.getItem("token"));
   return (
-    <nav className="">
+    <nav className="d-flex py-2 flex-column flex-md-row justify-content-between">
+      <h3 className="my-auto mx-auto mx-md-2">Found&Seek</h3>
       {toke === "" ? (
-        <ul className="list-unstyled d-flex py-3 justify-content-end">
+        <ul className="list-unstyled my-auto d-flex py-3 justify-content-center justify-content-md-end">
           <li className="mx-3">
             <Link className="text-decoration-none link-light" to="/">
               Home
@@ -27,7 +28,7 @@ const Nav = ({ setUser }) => {
           </li>
         </ul>
       ) : (
-        <ul className="list-unstyled d-flex py-3 justify-content-end">
+        <ul className="list-unstyled my-auto d-flex py-3 justify-content-center justify-content-md-end">
           <li className="mx-3">
             <Link className="text-decoration-none link-light" to="/">
               Home

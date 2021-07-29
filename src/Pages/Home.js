@@ -24,7 +24,7 @@ const Home = ({ devices, setDevices }) => {
         {devices &&
           devices.map((device) => (
             <Col key={device.id} className="mx-auto my-2" md={6} lg={4}>
-              <Card style={{ width: "18rem", minHeight: "30rem" }}>
+              <Card className="mx-auto" style={{ width: "18rem", minHeight: "30rem" }}>
                 <Card.Img
                   style={{ width: "18rem", height: "12rem" }}
                   variant="top"
