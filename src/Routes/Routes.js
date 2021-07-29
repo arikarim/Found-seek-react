@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../Pages/Home";
 import Nav from "../Pages/Nav/Nav";
-import Login from "../Pages/Login";
-import Signup from "../Pages/Signup";
-import CreateDevice from "../Pages/CreateDevice";
-import MyDevices from "../Pages/MyDevices";
-import UpdateDevice from "../Pages/UpdateDevice";
+import Login from "../Pages/Authentication/Login";
+import Signup from "../Pages/Authentication/Signup";
+import CreateDevice from "../Pages/Device/CreateDevice";
+import MyDevices from "../Pages/Device/MyDevices";
+import UpdateDevice from "../Pages/Device/UpdateDevice";
 import { Alert } from "react-bootstrap";
 import NotFound from "../Pages/NotFound";
 
