@@ -2,7 +2,7 @@
 
 exports[`Pages should match with snapshot 1`] = `
 <div
-  className="container"
+  className="height container"
 >
   <div
     className="mx-auto col-md-6"

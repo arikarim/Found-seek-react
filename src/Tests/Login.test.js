@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
-import Login from "../Pages/Login";
+import Login from "../Pages/Authentication/Login";
 
 describe("Header with Link", () => {
   test("should match with snapshot", () => {

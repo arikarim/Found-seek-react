@@ -1,3 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header with Link should match with snapshot 1`] = `null`;
+exports[`Header with Link should match with snapshot 1`] = `
+<div
+  className="signup-div"
+>
+  <form
+    className="my-5 d-flex flex-column  col-10 col-md-8 mx-auto p-5"
+    onSubmit={[Function]}
+  >
+    <label
+      className="col-form-label my-2"
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      className="my-3"
+      name="email"
+      onChange={[Function]}
+      placeholder="email"
+      required={true}
+      type="email"
+    />
+    <label
+      className="col-form-label my-2"
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      className="my-3"
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      required={true}
+      type="password"
+    />
+    <button
+      className="my-2 btn btndark"
+      type="submit"
+    >
+      Sign up
+    </button>
+    <a
+      className="text-decoration-none link-dark my-2"
+      href="/login"
+    >
+      Log in
+    </a>
+  </form>
+</div>
+`;
