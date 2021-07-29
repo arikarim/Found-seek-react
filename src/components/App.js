@@ -22,7 +22,14 @@ function App() {
         dataa.data.message === "Yeppa You did it"
           ? setUser("Logged")
           : setUser("Not_Logged");
+        localStorage.setItem(
+          "token",
+          JSON.stringify(dataa.headers.authorization)
+        );
       } catch (e) {
+        localStorage.setItem("token", JSON.stringify(""));
+        const toke = JSON.parse(localStorage.getItem("token"));
+        console.log(toke);
         console.log(e);
       }
     }

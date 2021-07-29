@@ -4,7 +4,7 @@ import { Button, Card, Col, Container } from "react-bootstrap";
 import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 // import { DeleteDevice } from "../PureFunctions/deleteDevice";
-import "../home.css";
+import "./device.css";
 const MyDevices = ({ devices }) => {
   const [myDevices, setMyDevices] = useState([]);
   const toke = JSON.parse(localStorage.getItem("token"));
@@ -45,7 +45,7 @@ const MyDevices = ({ devices }) => {
   };
 
   return (
-    <Container className="d-flex flex-wrap">
+    <Container className="d-flex flex-wrap height">
       {myDevices &&
         myDevices.map((device) => (
           <Col

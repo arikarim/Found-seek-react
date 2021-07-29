@@ -39,7 +39,6 @@ const Createdevice = () => {
           alert.classList.add("d-none");
           alert.classList.remove("d-block");
         }, 3000);
-        console.log(response);
       })
       .catch((error) => {
         console.log(error);
