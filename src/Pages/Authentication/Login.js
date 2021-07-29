@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Redirect, useHistory } from "react-router";
 import { alert } from "../../PureFunctions/alert";
+import {InvalidAlert} from "../../PureFunctions/InvalidAlert";
 import "./registration.css";
 
 const Login = ({ setUser, user, setUser_id }) => {
@@ -26,6 +27,7 @@ const Login = ({ setUser, user, setUser_id }) => {
       history.push("/");
       alert(data);
     } catch (error) {
+      InvalidAlert()
       console.log(error);
     }
   };
