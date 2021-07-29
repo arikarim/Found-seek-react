@@ -9,6 +9,7 @@ import MyDevices from "../Pages/Device/MyDevices";
 import UpdateDevice from "../Pages/Device/UpdateDevice";
 import { Alert } from "react-bootstrap";
 import NotFound from "../Pages/NotFound";
+import Footer from "../Pages/Footer/Footer";
 
 const Routes = ({ user, setUser, setUser_id, user_id }) => {
   const [devices, setDevices] = useState([]);
@@ -79,6 +80,7 @@ const Routes = ({ user, setUser, setUser_id, user_id }) => {
             <Route path="*" render={(props) => <NotFound />} />
           </Switch>
         </div>
+        <Footer />
       </Router>
     </div>
   );

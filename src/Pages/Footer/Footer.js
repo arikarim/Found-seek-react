@@ -1,13 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import "./footer.css";
 const Footer = () => {
   return (
-    <div className="d-flex justify-content-between">
-      <div className="footer-item">Found&Seek</div>
-      <div className="footer-item">Copy right 2021</div>
-      <div className="footer-item">found&seek@gmail.com</div>
+    <div className="footer d-flex justify-content-between">
+      <div className="footer-item"><h3>Found&Seek</h3></div>
+      <div className="footer-item my-auto">Copy right 2021</div>
+      <div className="footer-item my-auto">found&seek@gmail.com</div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
