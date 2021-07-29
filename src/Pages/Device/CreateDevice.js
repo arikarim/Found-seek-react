@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Button, Col, Container } from "react-bootstrap";
 import { useHistory } from "react-router";
-
+import "./device.css";
 const Createdevice = () => {
   const [uploadFile, setUploadFile] = useState([]);
   const [name, setName] = useState("");
@@ -47,7 +47,7 @@ const Createdevice = () => {
   };
 
   return (
-    <Container>
+    <Container className="height">
       <Col md={6} className="mx-auto">
         <form
           className="form"

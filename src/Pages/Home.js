@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
-
+import "./home.css";
 const Home = ({ devices, setDevices }) => {
   const fetchDevices = async () => {
     try {
@@ -24,7 +24,10 @@ const Home = ({ devices, setDevices }) => {
         {devices &&
           devices.map((device) => (
             <Col key={device.id} className="mx-auto my-2" md={6} lg={4}>
-              <Card className="mx-auto" style={{ width: "18rem", minHeight: "30rem" }}>
+              <Card
+                className="mx-auto card"
+                style={{ width: "18rem", minHeight: "30rem" }}
+              >
                 <Card.Img
                   style={{ width: "18rem", height: "12rem" }}
                   variant="top"
@@ -33,7 +36,7 @@ const Home = ({ devices, setDevices }) => {
                 {/* {console.log(device)} */}
                 <Card.Body>
                   <Card.Title>{device.name}</Card.Title>
-                  <Card.Text>{device.description}</Card.Text>
+                  <Card.Text className="card-description">{device.description}</Card.Text>
                   <Card.Text className="position-absolute bottom-0">
                     Available:{" "}
                     {device.availability ? "Available" : "Not available"}

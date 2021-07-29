@@ -4,7 +4,7 @@ import { Button, Card, Col, Container } from "react-bootstrap";
 import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 // import { DeleteDevice } from "../PureFunctions/deleteDevice";
-
+import "../home.css";
 const MyDevices = ({ devices }) => {
   const [myDevices, setMyDevices] = useState([]);
   const toke = JSON.parse(localStorage.getItem("token"));
@@ -55,7 +55,7 @@ const MyDevices = ({ devices }) => {
             md={6}
             lg={4}
           >
-            <Card style={{ width: "18rem", minHeight: "30rem" }}>
+            <Card className='card' style={{ width: "18rem", minHeight: "30rem" }}>
               <Link
                 className="text-decoration-none link-dark"
                 key={device.id}
@@ -69,7 +69,7 @@ const MyDevices = ({ devices }) => {
                 {/* {console.log(device.user_id)} */}
                 <Card.Body>
                   <Card.Title>{device.name}</Card.Title>
-                  <Card.Text>{device.description}</Card.Text>
+                  <Card.Text className="card-description">{device.description}</Card.Text>
                   <Card.Text>
                     Available:{" "}
                     {device.availability ? "Available" : "Not available"}

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Container } from "react-bootstrap";
 import { Redirect, useHistory } from "react-router";
+import "./device.css";
 
 const UpdateDevice = () => {
   const [device, setDevice] = useState("");
@@ -77,7 +78,7 @@ const UpdateDevice = () => {
   };
 
   return (
-    <Container>
+    <Container className="height">
       <Col md={6} className="mx-auto">
         <form
           className="form"

@@ -1,4 +1,7 @@
 .footer {
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
   background: #d9a7c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
