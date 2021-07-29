@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages should match with snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="mx-auto col-md-6"
+  >
+    <form
+      className="form"
+      encType="multipart/form-data"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="name"
+      >
+        Name
+      </label>
+      <input
+        className="form-control my-2"
+        id="name"
+        name="name"
+        onChange={[Function]}
+        placeholder="Name"
+        required={true}
+        type="text"
+      />
+      <br />
+      <label
+        htmlFor="description"
+      >
+        Description
+      </label>
+      <input
+        className="form-control my-2"
+        id="description"
+        name="description"
+        onChange={[Function]}
+        placeholder="Description"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="file"
+      >
+        Upload a file
+      </label>
+      <input
+        className="form-control my-2"
+        id="file"
+        multiple={true}
+        name="file"
+        onChange={[Function]}
+        required={true}
+        type="file"
+      />
+      <label
+        htmlFor="availability"
+      >
+        Available?
+      </label>
+      <input
+        className="mx-2"
+        id="availability"
+        name="availability"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <br />
+      <button
+        className="btn btn-dark btn btn-primary"
+        disabled={false}
+        type="submit"
+      >
+        Create
+      </button>
+    </form>
+  </div>
+</div>
+`;

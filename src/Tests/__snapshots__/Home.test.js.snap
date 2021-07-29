@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header with Link should match with snapshot 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    Welcome to the home page
+  </h1>
+  <h3>
+    Checkout The devices
+  </h3>
+  <div
+    className="d-flex flex-wrap row"
+  />
+</div>
+`;

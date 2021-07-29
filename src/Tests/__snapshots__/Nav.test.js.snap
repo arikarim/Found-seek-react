@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header with Link should match with snapshot 1`] = `
+<nav
+  className=""
+>
+  <ul
+    className="list-unstyled d-flex py-3 justify-content-end"
+  >
+    <li
+      className="mx-3"
+    >
+      <a
+        className="text-decoration-none link-light"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="mx-3"
+    >
+      <a
+        className="text-decoration-none link-light"
+        href="/my_devices"
+        onClick={[Function]}
+      >
+        My devices
+      </a>
+    </li>
+    <li
+      className="mx-3"
+    >
+      <a
+        className="text-decoration-none link-light"
+        href="/create_device"
+        onClick={[Function]}
+      >
+        Create device
+      </a>
+    </li>
+    <li
+      className="mx-3"
+    >
+      <button
+        className="logout-btn"
+        onClick={[Function]}
+        type="submit"
+      >
+        Log out
+      </button>
+    </li>
+  </ul>
+</nav>
+`;
