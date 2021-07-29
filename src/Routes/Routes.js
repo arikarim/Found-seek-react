@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../Pages/Home";
-import Nav from "../Pages/Nav";
+import Nav from "../Pages/Nav/Nav";
 import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
 import CreateDevice from "../Pages/CreateDevice";

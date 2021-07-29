@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
-import Nav from "../Pages/Nav";
+import Nav from "../Pages/Nav/Nav";
 
 describe("Header with Link", () => {
   test("should match with snapshot", () => {
