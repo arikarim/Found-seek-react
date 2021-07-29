@@ -33,7 +33,7 @@ function App() {
     // eslint-disable-next-line
   }, [token, user]);
   return (
-    <div>
+    <div className="height">
       <Routes
         user_id={user_id}
         setUser_id={setUser_id}

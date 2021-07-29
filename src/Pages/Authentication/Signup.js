@@ -5,12 +5,11 @@ import { alert } from "../../PureFunctions/alert";
 import { InvalidAlert } from "../../PureFunctions/InvalidAlert";
 import "./registration.css";
 
-const Signup = ({ user, setUser, setUser_id }) => {
+const Signup = ({ setUser, setUser_id }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
   const toke = JSON.parse(localStorage.getItem("token"));
-  console.log(toke);
   if (toke !== "" && toke !== null) {
     return <Redirect to={"/"} />;
   }

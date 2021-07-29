@@ -27,7 +27,6 @@ const Routes = ({ user, setUser, setUser_id, user_id }) => {
               render={(props) => (
                 <Signup
                   {...props}
-                  user={user}
                   setUser={setUser}
                   setUser_id={setUser_id}
                 />
@@ -49,12 +48,12 @@ const Routes = ({ user, setUser, setUser_id, user_id }) => {
               exact
               path="/my_devices"
               render={(props) => (
-                <MyDevices {...props} user_id={user_id} devices={devices} />
+                <MyDevices {...props} devices={devices} />
               )}
             />
             <Route
               path="/create_device"
-              render={(props) => <CreateDevice {...props} user_id={user_id} />}
+              render={(props) => <CreateDevice {...props} />}
             />
             <Route
               exact
@@ -62,11 +61,6 @@ const Routes = ({ user, setUser, setUser_id, user_id }) => {
               render={(props) => (
                 <UpdateDevice
                   {...props}
-                  user_id={user_id}
-                  devices={devices}
-                  ownDevices={ownDevices}
-                  setOwnDevices={setOwnDevices}
-                  setDevices={setDevices}
                 />
               )}
             />
