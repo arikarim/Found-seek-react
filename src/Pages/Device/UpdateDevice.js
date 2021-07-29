@@ -11,6 +11,8 @@ const UpdateDevice = () => {
   const [description, setDescription] = useState("");
   const [isChecked, setIsChecked] = useState(true);
   const history = useHistory();
+  const toke = JSON.parse(localStorage.getItem("token"));
+
 
   const handle = (e) => {
     const arr = Array.from(e.target.files);
@@ -76,6 +78,9 @@ const UpdateDevice = () => {
         // error response
       });
   };
+  if (toke === "") {
+    return <Redirect to={"/login"} />;
+  }
 
   return (
     <Container className="height">

@@ -1,8 +1,8 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Redirect, useHistory } from "react-router";
 import { alert } from "../../PureFunctions/alert";
-import {InvalidAlert} from "../../PureFunctions/InvalidAlert";
+import { InvalidAlert } from "../../PureFunctions/InvalidAlert";
 import "./registration.css";
 
 const Login = ({ setUser, user, setUser_id }) => {
@@ -27,11 +27,22 @@ const Login = ({ setUser, user, setUser_id }) => {
       history.push("/");
       alert(data);
     } catch (error) {
-      InvalidAlert()
+      InvalidAlert();
       console.log(error);
     }
   };
-  if (user === "Logged") {
+  const toke = JSON.parse(localStorage.getItem("token"));
+  const change = () => {
+    if (toke === "") {
+      setUser("Not Logged");
+    }
+  };
+  useEffect(() => {
+    change();
+  }, [toke]);
+  console.log(toke);
+  console.log(user);
+  if (toke !== "") {
     return <Redirect to={"/"} />;
   }
 

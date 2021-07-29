@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Button, Col, Container } from "react-bootstrap";
-import { useHistory } from "react-router";
+import { Redirect, useHistory } from "react-router";
 import "./device.css";
 const Createdevice = () => {
   const [uploadFile, setUploadFile] = useState([]);
@@ -9,6 +9,8 @@ const Createdevice = () => {
   const [description, setDescription] = useState("");
   const [isChecked, setIsChecked] = useState(true);
   const history = useHistory();
+  const toke = JSON.parse(localStorage.getItem("token"));
+
   const handle = (e) => {
     const arr = Array.from(e.target.files);
     setUploadFile(arr);
@@ -44,6 +46,9 @@ const Createdevice = () => {
         console.log(error);
       });
   };
+  if (toke === "") {
+    return <Redirect to={"/login"} />;
+  }
 
   return (
     <Container className="height">
