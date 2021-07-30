@@ -33,7 +33,6 @@ const Home = ({ devices, setDevices }) => {
                   variant="top"
                   src={device.images[0].url}
                 />
-                {/* {console.log(device)} */}
                 <Card.Body>
                   <Card.Title>{device.name}</Card.Title>
                   <Card.Text className="card-description">{device.description}</Card.Text>
