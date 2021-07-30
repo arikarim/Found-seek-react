@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Button, Card, Col, Container } from "react-bootstrap";
 import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
-// import { DeleteDevice } from "../PureFunctions/deleteDevice";
 import "./device.css";
 const MyDevices = ({ devices }) => {
   const [myDevices, setMyDevices] = useState([]);
@@ -66,7 +65,6 @@ const MyDevices = ({ devices }) => {
                   variant="top"
                   src={device.images[0].url}
                 />
-                {/* {console.log(device.user_id)} */}
                 <Card.Body>
                   <Card.Title>{device.name}</Card.Title>
                   <Card.Text className="card-description">{device.description}</Card.Text>

@@ -16,7 +16,6 @@ const UpdateDevice = () => {
 
   const handle = (e) => {
     const arr = Array.from(e.target.files);
-    // console.log(arr);
     setUploadFile(arr);
   };
   const setDeviceData = async () => {
@@ -75,7 +74,6 @@ const UpdateDevice = () => {
         }, 3000);
         console.log(error);
         return <Redirect to={"/my_devices"} />;
-        // error response
       });
   };
   if (toke === "") {
@@ -96,12 +94,10 @@ const UpdateDevice = () => {
             className="form-control my-2"
             type="text"
             name="name"
-            // value={name || device.name}
             id="name"
             placeholder={device && device.name}
             required
           />
-          {/* {device && console.log(device)} */}
           <br />
           <label htmlFor="description">Description</label>
           <input
