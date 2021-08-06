@@ -19,10 +19,10 @@ exports[`Pages should match with snapshot 1`] = `
       </label>
       <input
         className="form-control my-2"
+        defaultValue=""
         id="name"
         name="name"
         onChange={[Function]}
-        placeholder=""
         required={true}
         type="text"
       />
@@ -34,10 +34,10 @@ exports[`Pages should match with snapshot 1`] = `
       </label>
       <input
         className="form-control my-2"
+        defaultValue=""
         id="description"
         name="description"
         onChange={[Function]}
-        placeholder=""
         required={true}
         type="text"
       />

@@ -2,6 +2,6 @@
 
 exports[`Pages should match with snapshot 1`] = `
 <div
-  className="d-flex flex-wrap container"
+  className="d-flex flex-wrap height container"
 />
 `;
