@@ -13,7 +13,6 @@ const UpdateDevice = () => {
   const history = useHistory();
   const toke = JSON.parse(localStorage.getItem("token"));
 
-
   const handle = (e) => {
     const arr = Array.from(e.target.files);
     setUploadFile(arr);
@@ -95,7 +94,7 @@ const UpdateDevice = () => {
             type="text"
             name="name"
             id="name"
-            placeholder={device && device.name}
+            defaultValue={device && device.name}
             required
           />
           <br />
@@ -106,7 +105,7 @@ const UpdateDevice = () => {
             type="text"
             name="description"
             id="description"
-            placeholder={device && device.description}
+            defaultValue={device && device.description}
             required
           />
           <label htmlFor="file">Upload a file</label>
